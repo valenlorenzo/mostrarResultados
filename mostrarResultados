@@ -1,0 +1,50 @@
+void mostrarResultados (Persona.estudios, Persona.completo, Persona.edad, Familia.identificador, Familia.cantIntegrantes, Persona.sexo, cantEncuestados ){
+	int primariaCompleta = 0;
+	if ((Persona.estudios == 'P' && Persona.completo == 'C') || Persona.estudios == S || Persona.estudios == T || Persona.estudios == U){
+		primariaCompleta++;
+	}
+	int totalAnalfabetos = 0;
+	float porcAnalfabetos; //porcentaje mayores de 10 años sin estudios
+    if (Persona.estudios == 'N' && Persona.edad > 10){
+    	totalAnalfabetos++;
+	}
+	porcAnalfabetos = (totalAnalfabetos*100)/cantEncuestados);
+	int maxIntegrantes, mayorDepto; 
+	if (Familia.cantIntegrantes > maxIntegrantes){
+		mayorDepto = Familia.Identificador;
+	} 	
+    int edades = 0;
+	int promedioEdad;
+    edades = edades + Persona.edad;
+    promedioEdad = edades/cantEncuestados;
+    int cantSN[4]; // Cantidad Segun Nivel
+	int cantP = 0;
+	cantSN[1] = cantP; // Nivel primario
+	int cantS = 0;
+	cantSN[2] = cantS; // Nivel secundario
+	int cantT = 0;
+	cantSN[3] = cantT; // Nivel terciario
+	int cantU = 0;
+	cantSN[4] = cantU; // Nivel universitario 
+	if (Persona.estudios == 'P' && Persona.completo == 'I'){
+    	cantP++;
+	}
+	if (Persona.estudios == 'S' && Persona.completo == 'I'){
+    	cantS++;
+	}
+	if (Persona.estudios == 'T' && Persona.completo == 'I'){
+    	cantT++;
+	}
+	if (Persona.estudios == 'U' && Persona.completo == 'I'){
+    	cantU++;
+	}	
+	int totalFem, totalMasc, porcF, porcM;
+	if (Persona.sexo == 'F'){
+		totalFem++;
+	}
+	if (Persona.sexo == 'M'){
+		totalMasc++;
+	}
+	porcF = (totalF*100)/cantEncuestados;
+	porcM = (totalM*100)/cantEncuestados;
+}
